@@ -28,6 +28,7 @@ graph TB
     B --> C[MySQL Database]
     B --> D[Authentication Service]
     B --> E[Notification Service]
+
 3. Functional Specifications
 3.1 User Stories
 Epic: User Management
@@ -178,5 +179,3 @@ Project Duration: 40 hours
 Technology Stack: Spring Boot + React + MySQL
 📞 Support
 For questions or issues, please refer to the documentation in the docs/ directory.
-
----
