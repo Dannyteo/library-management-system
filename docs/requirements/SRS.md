@@ -127,9 +127,6 @@ Efficient pagination for large datasets
 ### 6. Deployment Strategy
 ```---
 ---
-
-### ✅ Task 6: Setup Instructions Document (30 mins)
-
 #### 6.1 Create Setup Guide
 Create: `README.md` (Update root README)
 ```markdown
@@ -178,7 +175,7 @@ Database Setup
 
 👥 Team
 
-Developer: [Your Name]
+Developer: Teo Yong Song
 Project Duration: 40 hours
 Technology Stack: Spring Boot + React + MySQL
 
