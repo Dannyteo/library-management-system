@@ -23,5 +23,112 @@ The system will provide comprehensive library management capabilities including 
 
 #### 2.2 System Components
 ```mermaid
+graph TB
+    A[React Frontend] --> B[Spring Boot API]
+    B --> C[MySQL Database]
+    B --> D[Authentication Service]
+    B --> E[Notification Service]
+```
 
 ### 3. Functional Specifications
+### 3.1 User Stories
+
+Epic: User Management
+
+As a new user, I want to register an account so I can access the system
+As a user, I want to login securely so I can access my account
+As an admin, I want to manage user roles and permissions
+
+Epic: Book Management
+
+As a librarian, I want to add new books to the system
+As a user, I want to search for books by title, author, or genre
+As a user, I want to view book availability status
+
+Epic: Transaction Management
+
+As a member, I want to borrow available books
+As a member, I want to return borrowed books
+As a librarian, I want to track all book transactions
+
+### 4. Technical Specifications
+### 4.1 Database Schema (Initial)
+-- Users table
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('ADMIN', 'LIBRARIAN', 'MEMBER') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Books table
+CREATE TABLE books (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    isbn VARCHAR(20) UNIQUE,
+    genre VARCHAR(100),
+    total_copies INT DEFAULT 1,
+    available_copies INT DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Transactions table
+CREATE TABLE transactions (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    user_id BIGINT NOT NULL,
+    book_id BIGINT NOT NULL,
+    borrow_date DATE NOT NULL,
+    due_date DATE NOT NULL,
+    return_date DATE,
+    status ENUM('ACTIVE', 'RETURNED', 'OVERDUE') DEFAULT 'ACTIVE',
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (book_id) REFERENCES books(id)
+);
+
+### 4.2 API Endpoints (Planned)
+### 5. Quality Assurance
+### 5.1 Testing Strategy
+
+Unit Testing: JUnit (Backend), Jest (Frontend)
+Integration Testing: TestContainers, React Testing Library
+End-to-End Testing: Manual testing scenarios
+
+### 5.2 Performance Requirements
+
+API response time: < 500ms
+Page load time: < 2 seconds
+Database query optimization
+Efficient pagination for large datasets
+
+### 6. Deployment Strategy
+
+Development: Local environment
+Testing: Docker containers
+Production: Cloud deployment (AWS/Azure)
+
+Server runs on: http://localhost:8080
+Frontend Setup
+
+Application runs on: http://localhost:5173
+Database Setup
+
+📋 Development Milestones
+
+ Milestone 1: Project Setup (4 hrs)
+ Milestone 2: User Registration & Authentication (6 hrs)
+ Milestone 3: Book Management (Admin) (8 hrs)
+ Milestone 4: Book Search & Borrow/Return (10 hrs)
+ Milestone 5: Overdue Notifications (4 hrs)
+ Milestone 6: Integration, Testing & Documentation (8 hrs)
+
+👥 Team
+
+Developer: [Your Name]
+Project Duration: 40 hours
+Technology Stack: Spring Boot + React + MySQL
+
+📞 Support
+For questions or issues, please refer to the documentation in the docs/ directory.
