@@ -114,23 +114,21 @@ GET  /api/transactions/overdue
 ### 5. Quality Assurance
 ### 5.1 Testing Strategy
 
-Unit Testing: JUnit (Backend), Jest (Frontend)
-Integration Testing: TestContainers, React Testing Library
-End-to-End Testing: Manual testing scenarios
+Unit Testing: JUnit (Backend), Jest (Frontend)  
+Integration Testing: TestContainers, React Testing Library  
+End-to-End Testing: Manual testing scenarios  
 
 ### 5.2 Performance Requirements
 
-API response time: < 500ms
-Page load time: < 2 seconds
-Database query optimization
-Efficient pagination for large datasets
+API response time: < 500ms  
+Page load time: < 2 seconds  
+Database query optimization  
+Efficient pagination for large datasets  
 
 ### 6. Deployment Strategy
-```---
----
 #### 6.1 Create Setup Guide
 Create: `README.md` (Update root README)
-```markdown
+
 # Library Management System
 
 A full-stack web application for managing library operations built with Spring Boot and React.
