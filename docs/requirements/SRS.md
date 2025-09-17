@@ -36,8 +36,8 @@ graph TB
 Epic: User Management
 
 `As a new user, I want to register an account so I can access the system`
-#As a user, I want to login securely so I can access my account
-#As an admin, I want to manage user roles and permissions
+`As a user, I want to login securely so I can access my account`
+`As an admin, I want to manage user roles and permissions`
 
 Epic: Book Management
 
