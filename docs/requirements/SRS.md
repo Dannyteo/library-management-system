@@ -114,23 +114,23 @@ GET  /api/transactions/overdue
 ### 5. Quality Assurance
 ### 5.1 Testing Strategy
 
-Unit Testing: JUnit (Backend), Jest (Frontend)  
-Integration Testing: TestContainers, React Testing Library  
-End-to-End Testing: Manual testing scenarios  
+- Unit Testing: JUnit (Backend), Jest (Frontend)  
+- Integration Testing: TestContainers, React Testing Library  
+- End-to-End Testing: Manual testing scenarios  
 
 ### 5.2 Performance Requirements
 
-API response time: < 500ms  
-Page load time: < 2 seconds  
-Database query optimization  
-Efficient pagination for large datasets  
+- API response time: < 500ms  
+- Page load time: < 2 seconds  
+- Database query optimization  
+- Efficient pagination for large datasets  
 
 ### 6. Deployment Strategy
 #### 6.1 Create Setup Guide
 Create: `README.md` (Update root README)
 
 # Library Management System
-
+```
 A full-stack web application for managing library operations built with Spring Boot and React.
 
 ## 🏗️ Architecture
@@ -153,30 +153,30 @@ cd backend
 mvn clean install
 mvn spring-boot:run
 ```
-Development: Local environment
-Testing: Docker containers
-Production: Cloud deployment (AWS/Azure)
+Development: Local environment  
+Testing: Docker containers  
+Production: Cloud deployment (AWS/Azure)  
 
-Server runs on: http://localhost:8080
+Server runs on: http://localhost:8080  
 Frontend Setup
 
-Application runs on: http://localhost:5173
+Application runs on: http://localhost:5173  
 Database Setup
 
 📋 Development Milestones
 
- Milestone 1: Project Setup (4 hrs)
- Milestone 2: User Registration & Authentication (6 hrs)
- Milestone 3: Book Management (Admin) (8 hrs)
- Milestone 4: Book Search & Borrow/Return (10 hrs)
- Milestone 5: Overdue Notifications (4 hrs)
- Milestone 6: Integration, Testing & Documentation (8 hrs)
+ Milestone 1: Project Setup (4 hrs)  
+ Milestone 2: User Registration & Authentication (6 hrs)  
+ Milestone 3: Book Management (Admin) (8 hrs)  
+ Milestone 4: Book Search & Borrow/Return (10 hrs)  
+ Milestone 5: Overdue Notifications (4 hrs)  
+ Milestone 6: Integration, Testing & Documentation (8 hrs)  
 
 👥 Team
 
-Developer: Teo Yong Song
-Project Duration: 40 hours
-Technology Stack: Spring Boot + React + MySQL
+Developer: Teo Yong Song  
+Project Duration: 40 hours  
+Technology Stack: Spring Boot + React + MySQL  
 
 📞 Support
 For questions or issues, please refer to the documentation in the docs/ directory.
