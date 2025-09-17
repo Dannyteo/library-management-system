@@ -90,6 +90,26 @@ CREATE TABLE transactions (
 );
 ```
 ### 4.2 API Endpoints (Planned)
+```
+Authentication:
+POST /api/auth/register
+POST /api/auth/login
+GET  /api/auth/profile
+
+Books:
+GET    /api/books
+POST   /api/books
+GET    /api/books/{id}
+PUT    /api/books/{id}
+DELETE /api/books/{id}
+GET    /api/books/search
+
+Transactions:
+POST /api/transactions/borrow
+POST /api/transactions/return
+GET  /api/transactions/user/{userId}
+GET  /api/transactions/overdue
+```
 ### 5. Quality Assurance
 ### 5.1 Testing Strategy
 
