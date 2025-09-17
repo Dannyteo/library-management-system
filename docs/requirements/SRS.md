@@ -53,7 +53,7 @@ As a librarian, I want to track all book transactions
 
 ### 4. Technical Specifications
 ### 4.1 Database Schema (Initial)
-```mermaid
+```sql
 -- Users table
 CREATE TABLE users (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
