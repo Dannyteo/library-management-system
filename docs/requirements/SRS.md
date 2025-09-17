@@ -126,11 +126,15 @@ GET  /api/transactions/overdue
 - Efficient pagination for large datasets  
 
 ### 6. Deployment Strategy
+- Development: Local environment
+- Testing: Docker containers
+- Production: Cloud deployment (AWS/Azure)
+```
 #### 6.1 Create Setup Guide
 Create: `README.md` (Update root README)
 
 # Library Management System
-```
+
 A full-stack web application for managing library operations built with Spring Boot and React.
 
 ## 🏗️ Architecture
@@ -153,15 +157,28 @@ cd backend
 mvn clean install
 mvn spring-boot:run
 ```
-Development: Local environment  
-Testing: Docker containers  
-Production: Cloud deployment (AWS/Azure)  
-
 Server runs on: http://localhost:8080  
-Frontend Setup
-
+## Frontend Setup
+```Bash
+cd frontend
+npm install
+npm run dev
+```
 Application runs on: http://localhost:5173  
 Database Setup
+```sql
+CREATE DATABASE library_management_db;
+-- Update application.properties with your MySQL credentials
+```
+📁 Project Structure
+```
+library-management-system/
+├── backend/           # Spring Boot API
+├── frontend/          # React Application  
+├── docs/             # Documentation
+├── database/         # Database scripts
+└── README.md
+```
 
 📋 Development Milestones
 
