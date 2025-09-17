@@ -129,10 +129,9 @@ GET  /api/transactions/overdue
 - Development: Local environment
 - Testing: Docker containers
 - Production: Cloud deployment (AWS/Azure)
-```
 #### 6.1 Create Setup Guide
 Create: `README.md` (Update root README)
-
+```
 # Library Management System
 
 A full-stack web application for managing library operations built with Spring Boot and React.
