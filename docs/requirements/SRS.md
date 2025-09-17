@@ -125,7 +125,38 @@ Database query optimization
 Efficient pagination for large datasets
 
 ### 6. Deployment Strategy
+```---
+---
 
+### ✅ Task 6: Setup Instructions Document (30 mins)
+
+#### 6.1 Create Setup Guide
+Create: `README.md` (Update root README)
+```markdown
+# Library Management System
+
+A full-stack web application for managing library operations built with Spring Boot and React.
+
+## 🏗️ Architecture
+- **Frontend**: React 18 + Vite + Tailwind CSS
+- **Backend**: Spring Boot 3.2 + Java 17
+- **Database**: MySQL 8.0
+- **Authentication**: Spring Security + JWT
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Java 17+
+- Node.js 18+
+- MySQL 8.0+
+- Maven 3.6+
+
+### Backend Setup
+```bash
+cd backend
+mvn clean install
+mvn spring-boot:run
+```
 Development: Local environment
 Testing: Docker containers
 Production: Cloud deployment (AWS/Azure)
