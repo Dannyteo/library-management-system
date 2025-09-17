@@ -53,6 +53,7 @@ As a librarian, I want to track all book transactions
 
 ### 4. Technical Specifications
 ### 4.1 Database Schema (Initial)
+```mermaid
 -- Users table
 CREATE TABLE users (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
@@ -87,7 +88,7 @@ CREATE TABLE transactions (
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (book_id) REFERENCES books(id)
 );
-
+```
 ### 4.2 API Endpoints (Planned)
 ### 5. Quality Assurance
 ### 5.1 Testing Strategy
