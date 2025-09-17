@@ -23,8 +23,5 @@ The system will provide comprehensive library management capabilities including 
 
 #### 2.2 System Components
 ```mermaid
-graph TB
-    A[React Frontend] --> B[Spring Boot API]
-    B --> C[MySQL Database]
-    B --> D[Authentication Service]
-    B --> E[Notification Service]
+
+### 3. Functional Specifications
