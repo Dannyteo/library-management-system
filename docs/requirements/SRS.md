@@ -150,14 +150,14 @@ A full-stack web application for managing library operations built with Spring B
 - MySQL 8.0+
 - Maven 3.6+
 ```
-## Backend Setup
+#### Backend Setup
 ```bash
 cd backend
 mvn clean install
 mvn spring-boot:run
 Server runs on: http://localhost:8080
 ```
-## Frontend Setup
+#### Frontend Setup
 ```Bash
 cd frontend
 npm install
