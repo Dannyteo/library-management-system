@@ -19,3 +19,16 @@ library-management-system/
 └── database/
 └── schema/ 
 ```
+## 🏗️ Architecture
+- **Frontend**: React 18 + Vite + Tailwind CSS
+- **Backend**: Spring Boot 3.2 + Java 17
+- **Database**: MySQL 8.0
+- **Authentication**: Spring Security + JWT
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Java 17+
+- Node.js 18+
+- MySQL 8.0+
+- Maven 3.6+
