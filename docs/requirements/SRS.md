@@ -155,20 +155,22 @@ A full-stack web application for managing library operations built with Spring B
 cd backend
 mvn clean install
 mvn spring-boot:run
-Server runs on: http://localhost:8080
 ```
+Backed Server runs on: http://localhost:8080
+
 #### Frontend Setup
 ```Bash
 cd frontend
 npm install
 npm run dev
 ```
-Application runs on: http://localhost:5173  
+Application runs on: http://localhost:5173
 Database Setup
 ```sql
 CREATE DATABASE library_management_db;
 -- Update application.properties with your MySQL credentials
 ```
+
 📁 Project Structure
 ```
 library-management-system/
