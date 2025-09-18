@@ -164,7 +164,7 @@ cd frontend
 npm install
 npm run dev
 ```
-Application runs on: http://localhost:5173
+Application runs on: http://localhost:5173  
 Database Setup
 ```sql
 CREATE DATABASE library_management_db;
