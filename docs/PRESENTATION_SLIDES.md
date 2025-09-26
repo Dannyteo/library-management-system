@@ -7,8 +7,8 @@
 **Library Management System (LMS) - Capstone Project**
 *Full Stack Web Development Project*
 
-**Presented by:** [Learner's Name]  
-**Date:** [Presentation Date]  
+**Presented by:** Teo Yong Song  
+**Date:** 3rd October 2025  
 
 **Presentation Hints:**
 - Briefly introduce yourself and the project
@@ -345,5 +345,6 @@
 - How does the system scale with more data?
 
 ---
+
 
 **Presentation Slides** - Library Management System Capstone Project 📊🎯
